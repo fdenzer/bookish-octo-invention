@@ -53,8 +53,35 @@ To make your local camera stream accessible from the internet, follow these step
 
 Your camera stream will then be available at `http://your-public-address:81/stream`.
 
+## Troubleshooting & Utilities
+
+### Finding your Public IP Address
+
+If you don't use MyFRITZ! or a DynDNS service, your public IP might change. You can use the included `get_ip.py` script to programmatically retrieve your current external IP from your Fritz!Box.
+
+**Installation:**
+```bash
+pip install -r requirements.txt
+```
+
+**Usage:**
+```bash
+python get_ip.py --password your_fritzbox_password
+```
+
+**Authentication Note:**
+Depending on your Fritz!Box configuration, you might need to provide a username as well:
+- **Password only**: Common if you only have one user or "Login with Fritz!Box password" enabled.
+- **Username + Password**: Required if you have multiple users or "Login with username and password" enabled. Use the `--user` flag:
+  ```bash
+  python get_ip.py --user your_username --password your_password
+  ```
+
+**Security:**
+Run this script only on a trusted computer within your local network (localhost) where you can safely provide your password.
+
 ## Serving
-- [x] github action copies static html to server just that route (Work in progress)
+- [x] github action copies static html to server just that route
 
 
 ## License
