@@ -1,4 +1,5 @@
-# bookish-octo-invention (placeholder name. Repo name will stay bookish-octo-invention)
+bookish-octo-invention
+======
 
 ## FritzStream: Sharing your local MJPEG camera stream with the world
 
