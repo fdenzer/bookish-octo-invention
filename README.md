@@ -54,6 +54,16 @@ To make your local camera stream accessible from the internet, follow these step
 
 Your camera stream will then be available at `http://your-public-address:81/stream`.
 
+### Cloudflare Hosting & DynDNS
+FritzStream can be hosted on **Cloudflare Pages**. To automate your public IP updates to Cloudflare DNS, see [todo-cli-routing.md](todo-cli-routing.md) for instructions on using RouterOS, OpenWRT, or a custom proxy script.
+
+## UI Features
+The web interface now includes:
+- **Status Monitoring**: Visual indicators for Connection, Online (Live), and Error states.
+- **PoC Fallback**: A built-in public MJPEG stream to test functionality if your camera is offline.
+- **Technical Metadata**: Real-time resolution display.
+- **Persistence**: Remembers your custom stream URL in your browser.
+
 ## Troubleshooting & Utilities
 
 ### Finding your Public Stream URL
